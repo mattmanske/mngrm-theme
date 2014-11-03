@@ -1,0 +1,23 @@
+/*-----------  Filled Buttons  -----------*/
+
+button,
+.button,
+input[type='submit']
+  color: $white
+  background-color: $green
+
+button.alt,
+.button-alt,
+input[type='submit'].alt
+  color: $black
+  background-color: $white
+
+/*-----------  Disabled Buttons  -----------*/
+
+.button.disabled,
+.button[disabled],
+button[disabled],
+input[type='submit'][disabled]
+  opacity: 0.75
+  cursor: not-allowed
+  background-color: rgba($grayLight, 0.5) !important

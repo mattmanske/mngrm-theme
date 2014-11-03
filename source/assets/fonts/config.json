@@ -1,0 +1,52 @@
+{
+  "name": "mngrm",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "ccf7ed45e7f05a89376f38abaa9d7d13",
+      "css": "twitter-circled",
+      "code": 59394,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "96aafeab29734d1510805687f7695f8f",
+      "css": "facebook-circled",
+      "code": 59393,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "0a16125788558bcc5d70ae3f10effce5",
+      "css": "instagram-circled",
+      "code": 59392,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "f5686c8ccdc0213b081ef95678160b6d",
+      "css": "basket",
+      "code": 59395,
+      "src": "elusive"
+    },
+    {
+      "uid": "221947bea81f49a11b863c686a7bd235",
+      "css": "search",
+      "code": 59397,
+      "src": "websymbols"
+    },
+    {
+      "uid": "26aba7edd46944209b4961670675a813",
+      "css": "cog",
+      "code": 59398,
+      "src": "websymbols"
+    },
+    {
+      "uid": "1821ddf00a08cef133824b1a4fd4790e",
+      "css": "down-dir",
+      "code": 59396,
+      "src": "websymbols"
+    }
+  ]
+}

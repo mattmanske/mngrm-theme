@@ -1,0 +1,67 @@
+/*-----------  Header  -----------*/
+
+.global-header
+  @include full-span(1.25em $gutter)
+
+  /*-----------  Header Logo  -----------*/
+
+  .header-logo
+    float: left
+    width: 18em
+
+    img
+      width: 100%
+      height: auto
+
+    .mobile-menu-trigger
+      z-index: 1000
+      top: 1px
+      right: 0
+      color: $white
+      display: none
+      cursor: pointer
+      font-size: 2.75em
+      position: absolute
+      @include transform(rotate(90deg))
+      @include transition()
+
+      &:before
+        margin: 0
+
+    @include media($tabletBreak)
+      float: none
+      width: 100%
+
+      .mobile-menu-trigger
+        top: 0.45em
+        right: 0.2em
+        display: block
+
+    @include media($mobileBreak)
+
+      .mobile-menu-trigger
+        top: 0.5em
+        font-size: 2.5em
+
+  /*-----------  Header Navigation  -----------*/
+
+  .header-navigation
+    text-align: right
+    padding-top: 0.25em
+
+    > a
+      color: $white
+      font-size: 0.9em
+      margin-left: 1.5em
+      line-height: 2.5625rem
+      @include antialiased(false)
+
+      &:hover,
+      &.active
+        color: $green
+
+      &.active
+        pointer-events: none
+
+    @include media($tabletBreak)
+      display: none

@@ -1,0 +1,18 @@
+/*-----------  Full Spans  -----------*/
+
+.full-span
+  @include full-span()
+
+/*-----------  Content Wrappers  -----------*/
+
+.bounds-wrapper
+  @include bounds-wrapper()
+
+.compact-wrapper
+  text-align: center
+  @include bounds-wrapper($max: $smallWidth)
+
+/*-----------  Class Helpers  -----------*/
+
+.hidden
+  display: none
