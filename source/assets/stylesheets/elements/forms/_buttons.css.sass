@@ -6,11 +6,7 @@
   cursor: pointer
   padding: 0 0.75em
   line-height: 2.5em
-  box-shadow: 2px 2px 6px rgba($black, 0)
   @include transition()
-
-  &:hover
-    box-shadow: 4px 4px 12px rgba($black, 0.15)
 
 /*-----------  Button Variations  -----------*/
 
@@ -30,7 +26,8 @@ input[type='submit'].alt
   background-color: $white
   @extend %button
 
-  &:hover
+  &:hover,
+  &:focus
     color: $green
 
 /*-----------  Disabled Buttons  -----------*/

@@ -12,7 +12,7 @@ section.slideshow-wrapper
   i.icon-arrow-left
   i.icon-arrow-right    
 
-/*-----------  MNGRM Customizer  -----------*/
+/*-----------  Customization  -----------*/
 
 section.customizer-wrapper
 
@@ -23,9 +23,9 @@ section.customizer-wrapper
         p Design your MNGRM
         p A beautifully crafted pendant made from any letter combination.
 
-      input.first-letter type="text" value="A"
-      input.second-letter type="text" value="L"
-      .button-alt View
+      input.initials id="js-first_mneu" type="text" value="A" maxlength="1"
+      input.initials id="js-second_menu" type="text" value="L" maxlength="1"
+      .button-alt id="js-rerender" View
 
     fieldset
       .flex-wrapper
@@ -42,10 +42,161 @@ section.customizer-wrapper
             option 1/4 Inch
 
         .select-wrapper
-          select
-            option 14k Gold
-            option Sterling Silver
+          select id="js-metals_menu"
 
         strong $485
 
         input type="submit" value="Buy Now"
+
+/*-----------  Rendering  -----------*/
+
+section.rendering-wrapper
+  
+  .loading-block
+    i.icon-loading
+    | Loading...
+
+  iframe(src="https://lagoa.com/embed_links/4876?validationHash=53AO6YHYnkDqOSE14fKsYv4nOD_2PQ&width=580&height=450&auto_load_scene=true" id="lagoaframe" width="580" height="450" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+
+/*-----------  Content: About  -----------*/
+
+section.content-wrapper
+  .bounds-wrapper
+    h3 About
+
+    .about-wrapper
+
+      ul.facts-block
+        li
+          i.icon-star
+          p MNGRMS are impossible to make by hand. Each is made from about 350 solid metal cylinders.
+        li
+          i.icon-ruler
+          p Each individual 1/2 inch MNGRM is made up of over 2 feet of solid metal piping.
+        li
+          i.icon-time
+          p Each custom MNGRM will arrive 3 - 4 weeks from the date of order
+        li
+          i.icon-chain
+          p Our chains are made from the finest matching material and not plated so they will last with age.                   
+        li
+          i.icon-necklace
+          p The 1/2 inch pendant necklace chains include an adjustable clasp, allowing the chain to be lengthened from 16 - 20 inches.                 
+        li
+          i.icon-typeface
+          p We built the MNGRM structures off of the contemporary sans- serif Arial typeface.                  
+
+      .process-block
+
+/*-----------  Content: Materials  -----------*/
+
+section.content-wrapper
+  .bounds-wrapper
+    h3 Materials
+
+    table.materials-wrapper
+      /*-----   First Row   -----*/
+      tr
+        td
+          = image_tag 'materials/stainless-steel.png'
+          strong Stainless Steel
+          span Bronze-infused stainless steel with visible print lines and rough feel
+        
+        td.filler
+        td
+          = image_tag 'materials/black-steel.png'
+          strong Matte Black Steel
+          span Treated for a matte black finish and textured with visible print lines
+        
+        td.filler
+        td
+          = image_tag 'materials/raw-bronze.png'
+          strong Raw Bronze
+          span Organic bronze resembling rose gold with a rough antique finish
+
+        td.filler
+        td
+          = image_tag 'materials/raw-brass.png'
+          strong Raw Brass
+          span Pure brass in its natural state with a slightly rough antique finish
+
+      /*-----   Second Row   -----*/
+      tr
+        td
+          = image_tag 'materials/polished-brass.png'
+          strong Polished Bronze
+          span Organic bronze resembling rose gold that's hand-polished to a fine sheen
+        
+        td.filler
+        td
+          = image_tag 'materials/polished-brass.png'
+          strong Polished Brass
+          span Pure brass that's hand-polished to a fine sheen
+
+        td.filler
+        td
+          = image_tag 'materials/premium-silver.png'
+          strong Premium Silver
+          span Elegant, sleek sterling silver thoroughly hand-polished to a fine sheen
+
+        td.filler
+        td
+          = image_tag 'materials/14k-gold.png'
+          strong 14K Gold
+          span Solid 14k Gold polished to a beautiful smooth sheen
+
+      /*-----   Third Row   -----*/
+      tr
+        td
+          = image_tag 'materials/14k-rose-gold.png'
+          strong 14K Rose Gold
+          span Solid 14k Rose Gold hand-polished to a beautiful smooth sheen
+        
+        td.filler
+        td
+          = image_tag 'materials/14k-white-gold.png'
+          strong 14K White Gold
+          span Solid 14k White Gold hand-polished to a beautiful smooth sheen
+          
+        td.filler
+        td
+          = image_tag 'materials/18k-gold.png'
+          strong 18K Gold
+          span Solid 18k Gold hand-polished to a beautiful smooth sheen
+
+        td.filler
+        td
+          = image_tag 'materials/platinum.png'
+          strong Platinum
+          span Solid Platinum hand-polished to a beautiful smooth sheen
+
+/*-----------  Content: Sizes  -----------*/
+
+section.content-wrapper
+  .bounds-wrapper
+    h3 Sizes
+
+    .sizes-wrapper
+      = image_tag 'size-half.png'
+      = image_tag 'size-third.png'
+
+/*-----------  Content: Instagram  -----------*/
+
+section.content-wrapper
+  .bounds-wrapper
+    h3 Instagram
+
+    .instagram-wrapper
+      - 10.times do
+        = image_tag 'instagram-filler.png', :class => 'instagram-block'
+
+/*-----------  Newsletter Signup  -----------*/
+
+section.newsletter-wrapper
+  .bounds-wrapper
+
+  h2 Sign up for our mailing list
+
+  .input-wrapper
+    input type="email" placeholder="name@email.com"
+    button Submit

@@ -5,7 +5,7 @@
   position: relative
   padding-top: 0 !important
   padding-bottom: 0 !important
-  background-color: $grayLight
+  background-color: $grayLight !important
 
   .bounds-wrapper
     @include justify-content(space-between)
@@ -35,10 +35,10 @@
       position: absolute
       font-weight: bold
 
-      &.first-letter
+      &#js-first_menu
         left: 1.25rem
 
-      &.second-letter
+      &#js-second_menu
         left: 6.75rem
 
     .button-alt
@@ -67,3 +67,6 @@
       margin-left: 0.5em
       font-weight: normal
       @include antialiased()
+
+    strong
+      font-size: 1.2em
