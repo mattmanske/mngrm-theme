@@ -4,7 +4,9 @@
   padding: 0 !important
   position: relative
   text-align: center
-  @include radial-gradient($grayLight, $grayDark)
+  background-repeat: no-repeat
+  background-position: center center
+  background-image: image-url('overlay.png')
   @include transition(1s)
 
   .loading-block
@@ -28,7 +30,6 @@
   /*-----------  Rendered State  -----------*/
 
   &.is-rendered
-    @include radial-gradient($grayDark, $grayDark)
 
     .loading-block
       opacity: 0

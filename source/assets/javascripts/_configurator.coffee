@@ -8,25 +8,25 @@ $(document).ready ->
   wrapper = $('.rendering-wrapper')
   letters = $('#js-first_mneu, #js-second_menu')
 
+  metals = [
+    '14k Gold'
+    '14k Rose Gold'
+    '14k White Gold'
+    '18k Gold'
+    'Platinum'
+    'Premium Silver'
+    'Stainless Steel'
+    'Matte Black Steel'
+    'Raw Brass'
+    'Polished Brass'
+    'Raw Bronze'
+    'Polished Bronze'
+  ]
+
   cam = null
   scn = null
-  currMat = null
-  currName = null
-
-  metals = [
-    "14k Gold"
-    "14k Rose Gold"
-    "14k White Gold"
-    "18k Gold"
-    "Platinum"
-    "Premium Silver"
-    "Stainless Steel"
-    "Matte Black Steel"
-    "Raw Brass"
-    "Polished Brass"
-    "Raw Bronze"
-    "Polished Bronze"
-  ]
+  currName = 'AL'
+  currMat = '14k Gold'
 
   #-----------  Lagoa Initilizers  -----------#
 
@@ -75,7 +75,6 @@ $(document).ready ->
   setUpScene = ->
     scn = lapi.getActiveScene()
     setTimeout (->
-      
       # lapi.startRender(); ///Start rendering
       lapi._embedRPC "ACTIVEAPP.vpman.setActiveIndicatorColor('" + "rgba(84,84,84,1)" + "')" #change the lagoa border color
       lapi.enableMouseInteractions false #stop mouse interations except for orbit
