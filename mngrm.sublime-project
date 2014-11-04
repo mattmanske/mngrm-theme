@@ -1,0 +1,37 @@
+{
+	"folders":
+	[
+		{
+			"name": "JS",
+			"path": "source/assets/javascripts"
+		},
+		{
+			"name": "CSS",
+			"path": "source/assets/stylesheets"
+		},
+		{
+			"name": "Images",
+			"path": "source/assets/images"
+		},
+		{
+			"folder_exclude_patterns":
+			[
+				"assets"
+			],
+			"name": "Source",
+			"path": "source"
+		},
+		{
+			"name": "Data",
+			"path": "data"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-*"
+			],
+			"name": "Project",
+			"path": "/"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+/*-----------  Anchors (links)  -----------*/
+
+a
+  color: inherit
+  cursor: pointer
+  text-decoration: none
+  @include transition()
+
+/*-----------  Paragraphs  -----------*/
+
+p
+  margin-top: 0
+  line-height: 150%
+
+  a
+    text-decoration: underline
+
+/*-----------  Headers  -----------*/
+
+h1, h2, h3, h4, h5, h6
+  color: inherit
+  line-height: 110%
+  margin: 0.3em auto
+  @include header-font()
+
+h1
+  font-size: 4.75em
+  @include media($middleBreak)
+    font-size: 4em
+  @include media($mobileBreak)
+    font-size: 3.5em
+
+h2
+  font-size: 3.67em
+  @include media($middleBreak)
+    font-size: 3.25em
+  @include media($mobileBreak)
+    font-size: 3em
+
+h3
+  font-size: 2.5em
+  @include media($mobileBreak)
+    font-size: 2.25em
+
+h4
+  font-size: 1.6em
+  @include media($middleBreak)
+    font-size: 1.5em
+  @include media($mobileBreak)
+    font-size: 1.33em

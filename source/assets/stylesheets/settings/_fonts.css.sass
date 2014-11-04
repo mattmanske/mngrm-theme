@@ -1,0 +1,113 @@
+/*-----------  Fonts  -----------*/
+
+$bodyFont     : 'Montserrat', sans-serif
+$bodyWeight   : 400
+
+$headerfont   : 'PT Sans Narrow', sans-serif
+$headerWeight : 400
+
+/*-----------  Body Font Mixin  -----------*/
+
+@mixin body-font($italic: false)
+  font-style: normal
+  font-family: $bodyFont
+  font-weight: $bodyWeight
+
+  @if $italic
+    font-style: italic
+  @else
+    font-style: normal
+
+/*-----------  Header Font Mixin  -----------*/
+
+@mixin header-font($italic: false)
+  font-style: normal
+  font-family: $headerfont
+  font-weight: $headerWeight
+
+  @if $italic
+    font-style: italic
+  @else
+    font-style: normal
+
+/*-----------  Weight Corrections  -----------*/
+
+@mixin antialiased($smooth: true)
+  @if $smooth
+    @include prefixer(font-smoothing, antialiased, webkit moz ms o spec)
+  @else
+    @include prefixer(font-smoothing, subpixel-antialiased, webkit moz ms o spec)
+
+/*-----------  Animations  -----------*/
+
+@include keyframes(spin)
+  from
+    @include transform(rotate(0deg))
+  to 
+    @include transform(rotate(-360deg))
+    
+/*-----------  Icon Fonts  -----------*/
+
+@font-face
+  font-family: 'mngrm'
+  src: url('../fonts/mngrm.eot?91000075')
+  src: url('../fonts/mngrm.eot?91000075#iefix') format("embedded-opentype"), url('../fonts/mngrm.woff?91000075') format("woff"), url('../fonts/mngrm.ttf?91000075') format("truetype"), url('../fonts/mngrm.svg?91000075#mngrm') format("svg")
+  font-weight: normal
+  font-style: normal
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+  width: 1em
+  speak: none
+  margin-right: .2em
+  text-align: center
+  font-style: normal
+  font-weight: normal
+  font-family: 'mngrm'
+  display: inline-block
+  text-decoration: inherit
+
+.icon-instagram:before
+  content: '\e800'
+
+.icon-facebook:before
+  content: '\e801'
+
+.icon-twitter:before
+  content: '\e802'
+
+.icon-cart:before
+  content: '\e803'
+
+.icon-down:before
+  content: '\e804'
+
+.icon-search:before
+  content: '\e805'
+
+.icon-typeface:before
+  content: '\e807'
+
+.icon-necklace:before
+  content: '\e808'
+
+.icon-arrow-right:before
+  content: '\e809'
+
+.icon-arrow-left:before
+  content: '\e80a'
+
+.icon-time:before
+  content: '\e80b'
+
+.icon-chain:before
+  content: '\e80c'
+
+.icon-star:before
+  content: '\e80d'
+
+.icon-ruler:before
+  content: '\e80e'
+
+.icon-loading:before
+  content: '\e806'
+  @include animation(spin 2s infinite ease-in-out)

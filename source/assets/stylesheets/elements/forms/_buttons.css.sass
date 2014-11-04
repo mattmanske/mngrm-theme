@@ -1,0 +1,41 @@
+/*-----------  Buttons  -----------*/
+
+%button
+  border: none
+  color: $black
+  cursor: pointer
+  padding: 0 0.75em
+  line-height: 2.5em
+  @include transition()
+
+/*-----------  Button Variations  -----------*/
+
+button,
+.button,
+input[type='submit']
+  background-color: $green
+  @include antialiased()
+  @extend %button
+
+  &:hover
+    color: $white
+
+button.alt,
+.button-alt,
+input[type='submit'].alt
+  background-color: $white
+  @extend %button
+
+  &:hover,
+  &:focus
+    color: $green
+
+/*-----------  Disabled Buttons  -----------*/
+
+.button.disabled,
+.button[disabled],
+button[disabled],
+input[type='submit'][disabled]
+  opacity: 0.75
+  cursor: not-allowed
+  background-color: rgba($grayLight, 0.5) !important
