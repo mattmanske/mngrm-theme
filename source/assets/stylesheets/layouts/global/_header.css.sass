@@ -1,24 +1,38 @@
 /*-----------  Header  -----------*/
 
 .global-header
+  left: 0
+  right: 0
+  z-index: 100
+  position: absolute
+  @include header-font()
   @include full-span(1.25em $gutter)
 
   /*-----------  Header Logo  -----------*/
 
   .header-logo
     float: left
-    width: 18em
+    width: 15em
 
     img
       width: 100%
       height: auto
+      margin-bottom: 0.25em
+
+    h1
+      margin: 0
+      color: $white
+      font-size: 1.5em
+      text-align: center
+      text-transform: uppercase
+      @include antialiased()
 
     .mobile-menu-trigger
-      z-index: 1000
       top: 1px
       right: 0
       color: $white
       display: none
+      z-index: 1000
       cursor: pointer
       font-size: 2.75em
       position: absolute
@@ -51,10 +65,15 @@
 
     > a
       color: $white
-      font-size: 0.9em
-      margin-left: 1.5em
-      line-height: 2.5625rem
-      @include antialiased(false)
+      font-size: 1.1em
+      margin-left: 1em
+      text-transform: uppercase
+      @include inline-block()
+      @include antialiased()
+
+      &.social-link i:before
+        font-size: 1.67em
+        margin-right: 0
 
       &:hover,
       &.active

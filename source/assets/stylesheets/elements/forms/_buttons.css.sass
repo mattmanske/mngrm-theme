@@ -1,16 +1,37 @@
-/*-----------  Filled Buttons  -----------*/
+/*-----------  Buttons  -----------*/
+
+%button
+  border: none
+  color: $black
+  cursor: pointer
+  padding: 0 0.75em
+  line-height: 2.5em
+  box-shadow: 2px 2px 6px rgba($black, 0)
+  @include transition()
+
+  &:hover
+    box-shadow: 4px 4px 12px rgba($black, 0.15)
+
+/*-----------  Button Variations  -----------*/
 
 button,
 .button,
 input[type='submit']
-  color: $white
   background-color: $green
+  @include antialiased()
+  @extend %button
+
+  &:hover
+    color: $white
 
 button.alt,
 .button-alt,
 input[type='submit'].alt
-  color: $black
   background-color: $white
+  @extend %button
+
+  &:hover
+    color: $green
 
 /*-----------  Disabled Buttons  -----------*/
 

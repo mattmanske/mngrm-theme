@@ -2,4 +2,50 @@
 title: Fine Printed Jewlery
 ---
 
-section.slideshow
+/*-----------  Slideshow  -----------*/
+
+section.slideshow-wrapper
+  
+  .slideshow-block style="background-image:url(#{image_path('slideshow/slideshow_1.jpg')})"
+  .slideshow-block style="background-image:url(#{image_path('slideshow/slideshow_1.jpg')})"
+
+  i.icon-arrow-left
+  i.icon-arrow-right    
+
+/*-----------  MNGRM Customizer  -----------*/
+
+section.customizer-wrapper
+
+  form.bounds-wrapper
+
+    fieldset
+      .copy-block
+        p Design your MNGRM
+        p A beautifully crafted pendant made from any letter combination.
+
+      input.first-letter type="text" value="A"
+      input.second-letter type="text" value="L"
+      .button-alt View
+
+    fieldset
+      .flex-wrapper
+        span Order this as a
+
+        .select-wrapper
+          select
+            option Necklace
+            option Pandant
+
+        .select-wrapper
+          select
+            option 1/2 Inch
+            option 1/4 Inch
+
+        .select-wrapper
+          select
+            option 14k Gold
+            option Sterling Silver
+
+        strong $485
+
+        input type="submit" value="Buy Now"

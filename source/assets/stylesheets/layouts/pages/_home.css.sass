@@ -2,3 +2,25 @@
 
 body.index
 
+
+  /*-----------  Slideshow Copy  -----------*/
+
+  .copy-block
+    position: absolute
+    margin-left: -$gutterSm
+    @include transform(translateY(-100%))
+
+    p
+      color: $white
+      margin: 1em 0 0
+      font-size: 1.25em
+      text-align: center
+      padding: 0.75em 0.67em
+      text-transform: uppercase
+      background-color: rgba($green, 0.5)
+
+      &:first-child
+        font-weight: bold
+
+      &:last-child
+        letter-spacing: -0.02em
