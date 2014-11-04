@@ -9,9 +9,6 @@ Middleman comes prepackaged with SASS and Coffeescript. We've also included
 [slim](http://slim-lang.com/) for templates, and [bourbon](http://bourbon.io/)
 and [neat](http://neat.bourbon.io/) for additional SASS mixins.
 
-We've also included [gmaps.js](http://hpneo.github.io/gmaps/), an easier way to
-interact with the Google Maps Javascript API.
-
 LiveReload will update your HTML/JS/CSS automatically whenever you make changes.
 **Note: When you add new files, you may need to restart Middleman for
 them to be included correctly.**
