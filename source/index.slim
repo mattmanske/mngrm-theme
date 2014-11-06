@@ -23,29 +23,42 @@ section.customizer-wrapper
         p Design your MNGRM
         p A beautifully crafted pendant made from any letter combination.
 
-      input.initials id="js-first_mneu" type="text" value="A" maxlength="1"
-      input.initials id="js-second_menu" type="text" value="L" maxlength="1"
-      .button-alt id="js-rerender" View
+      input.initials id="order-firstLetter" type="text" value="A" maxlength="1"
+      input.initials id="order-secondLetter" type="text" value="L" maxlength="1"
+      .button-alt id="order-rerender" View
 
     fieldset
       .flex-wrapper
         span Order this as a
 
         .select-wrapper
-          select
-            option Necklace
-            option Stand-alone
+          select id="order-type"
+            option value='necklace' Necklace
+            option value='keychain' Keychain
 
         .select-wrapper
-          select
-            option 1/2 Inch
-            option 3/4 Inch
+          select id="order-size"
+            option value='small' 1/2 Inch
+            option value='large' 3/4 Inch
 
         .select-wrapper
-          select id="js-metals_menu"
+          select id="order-material"
+            option value='gold_14_k' 14k Gold
+            option value='gold_14_k_rose' 14k Rose Gold
+            option value='gold_14_k_white' 14k White Gold
+            option value='gold_18_k' 18k Gold
+            option value='platinum' Platinum
+            option value='premium_silver' Premium Silver
+            option value='stainless_steel' Stainless Steel
+            option value='matte_black_steel' Matte Black Steel
+            option value='raw_brass' Raw Brass
+            option value='polished_brass' Polished Brass
+            option value='raw_bronze' Raw Bronze
+            option value='polished_bronze' Polished Bronze 
 
-        strong.price-block $485
+        strong.price-block $481.78
 
+        input type="hidden" id="order-price" name="order-price" value="481.78"
         input type="submit" value="Buy Now"
 
 /*-----------  Rendering  -----------*/

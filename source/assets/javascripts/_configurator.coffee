@@ -1,38 +1,19 @@
 $(document).ready ->
 
-  letter1 = $('#js-first_mneu')
-  letter2 = $('#js-second_menu')
-  material = $('#js-metals_menu')
-  rerender = $('#js-rerender')
+  letter1  = $('#order-firstLetter')
+  letter2  = $('#order-secondLetter')
+  material = $('#order-material')
+  rerender = $('#order-rerender')
+  
+  wrapper  = $('.rendering-wrapper')
+  letters  = $('#order-firstLetter, #order-secondLetter')
 
-  wrapper = $('.rendering-wrapper')
-  letters = $('#js-first_mneu, #js-second_menu')
-
-  metals = [
-    '14k Gold'
-    '14k Rose Gold'
-    '14k White Gold'
-    '18k Gold'
-    'Platinum'
-    'Premium Silver'
-    'Stainless Steel'
-    'Matte Black Steel'
-    'Raw Brass'
-    'Polished Brass'
-    'Raw Bronze'
-    'Polished Bronze'
-  ]
-
-  cam = null
-  scn = null
+  cam      = null
+  scn      = null
   currName = 'AL'
-  currMat = '14k Gold'
+  currMat  = '14k Gold'
 
   #-----------  Lagoa Initilizers  -----------#
-
-  material.empty()
-  for type in metals
-    material.append "<option>#{type}</option>"
 
   checkLoaded = ->
     lapi._embedRPC "ACTIVEAPP.getSceneLoaded();", (in_response) ->
@@ -64,9 +45,9 @@ $(document).ready ->
     meshes = scn.getMeshes()
 
     while i < meshes.length
-      # get the name of the object first
-      objName = meshes[i].properties.getParameter("name").value
-      lapi.applyMaterialToMeshByName @value, objName
+      materialName = $(@).find('option:selected').text()
+      objName      = meshes[i].properties.getParameter("name").value
+      lapi.applyMaterialToMeshByName materialName, objName
       ++i
     return
 
