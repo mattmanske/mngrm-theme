@@ -247,13 +247,57 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "source/assets/javascripts/_price-calculator.coffee",
+			"settings":
+			{
+				"buffer_size": 2510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/assets/javascripts/_configurator.coffee",
+			"settings":
+			{
+				"buffer_size": 4994,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/assets/stylesheets/components/_customizer.css.sass",
+			"settings":
+			{
+				"buffer_size": 1465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/assets/stylesheets/settings/_variables.css.sass",
+			"settings":
+			{
+				"buffer_size": 632,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/index.slim",
+			"settings":
+			{
+				"buffer_size": 6587,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 347.0,
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"ht",
 				"Set Syntax: HTML"
@@ -273,10 +317,6 @@
 			[
 				"erb",
 				"ERB: Insert/Switch Block"
-			],
-			[
-				"pack",
-				"Package Control: Install Package"
 			],
 			[
 				"pac",
@@ -331,7 +371,7 @@
 				"Project: Add Folder"
 			]
 		],
-		"width": 449.0
+		"width": 454.0
 	},
 	"console":
 	{
@@ -348,12 +388,13 @@
 	},
 	"file_history":
 	[
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_rendering.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/index.slim",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_configurator.coffee",
+		"/Users/Manske/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
+		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_price-calculator.coffee",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_rendering.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_slideshow.coffee",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_slideshow.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/index.slim",
-		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_price-calculator.coffee",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/pages/_home.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_buttons.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_inputs.css.sass",
@@ -474,8 +515,7 @@
 		"/Users/Manske/Sites/Personal/slimmer/source/images/.gitkeep",
 		"/Users/Manske/Sites/Personal/slimmer/data/.gitkeep",
 		"/Users/Manske/Sites/Personal/slimmer/config.rb",
-		"/Users/Manske/Sites/Personal/slimmer/bower.json",
-		"/Users/Manske/Sites/Personal/slimmer/.gitignore"
+		"/Users/Manske/Sites/Personal/slimmer/bower.json"
 	],
 	"find":
 	{
@@ -519,6 +559,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"js-",
+			" app.js:[0-9][0-9][0-9][0-9]",
+			"material",
+			"metals",
+			"material",
+			"18_k_gold",
+			"14_k_white_gold",
+			"14_k_rose_gold",
+			"14_k_gold",
+			"metals",
+			" _([a-z])",
+			"([0-9])_([0-9])",
+			"_:_",
+			": ",
+			" ([0-9])",
+			" [0-9]",
+			",",
+			" 3/4\"  Keychain  $",
+			" 1/2\"  Keychain  $",
+			" 1/2\"  Necklace  $",
+			" 3/4\"  Necklace  $",
+			"  3/4\"  Necklace  $",
 			"\"",
 			"currName",
 			"currMat",
@@ -624,36 +686,24 @@
 			"\nUnspecified error",
 			"json_api_rewrites",
 			"wp_rules",
-			"You are already logged in as",
-			"Unspecified error. #6",
-			"social",
-			"_script",
-			"script",
-			"que",
-			"localhost",
-			"id",
-			"home_url",
-			"localhost",
-			"error",
-			"listed",
-			"confirmMsg",
-			"enq",
-			"insert",
-			"user_login",
-			"insert",
-			"welcome",
-			"welcome=true",
-			"get_permalink",
-			"welcom",
-			"welcome",
-			"all"
+			"You are already logged in as"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"",
+			"gold_18_k",
+			"gold_14_k_white",
+			"gold_14_k_rose",
+			"gold_14_k",
+			" $1",
+			"$1.$2",
+			" : ",
+			": $1",
+			"",
 			"'",
 			"= image_tag 'materials/",
 			"",
@@ -715,13 +765,153 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "source/assets/javascripts/_price-calculator.coffee",
+					"settings":
+					{
+						"buffer_size": 2510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/assets/javascripts/_configurator.coffee",
+					"settings":
+					{
+						"buffer_size": 4994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								621,
+								621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 350.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/assets/stylesheets/components/_customizer.css.sass",
+					"settings":
+					{
+						"buffer_size": 1465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1415,
+								1415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 341.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/assets/stylesheets/settings/_variables.css.sass",
+					"settings":
+					{
+						"buffer_size": 632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 4,
+					"file": "source/index.slim",
+					"settings":
+					{
+						"buffer_size": 6587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2121,
+								2121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ruby-slim.tmbundle/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 800.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
