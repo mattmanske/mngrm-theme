@@ -70,11 +70,23 @@
       @include antialiased()
 
     .select-wrapper
-      width: 8.25em
 
       select
+        width: 100%
         font-size: 1.1em
         font-weight: bold
+        padding-right: 2em
+        @include inline-block(bottom)
+        @include ellipsis()
+
+      &.type
+        @include flex(0 1 8.33em)
+
+      &.size
+        @include flex(0 1 7.67em)
+
+      &.material
+        @include flex(0 1 12.75em)
 
     .price-block
       width: 6em
