@@ -19,31 +19,31 @@ body
   @include antialiased()
   @include body-font()
 
-  @include media($mobileBreak)
-    font-size: 90%
+  // @include media($mobileBreak)
+  //   font-size: 90%
 
 /*-----------  Global Wrapper  -----------*/
 
 .global-wrapper
   position: relative
 
-  @include media($tabletBreak)
-    top: 0
-    right: 0
-    width: 100%
-    height: 100%
-    position: fixed
-    overflow-x: hidden
-    overflow-y: scroll
-    -webkit-overflow-scrolling: touch
-    @include transition(right 0.33s ease-in-out)
+  // @include media($tabletBreak)
+  //   top: 0
+  //   right: 0
+  //   width: 100%
+  //   height: 100%
+  //   position: fixed
+  //   overflow-x: hidden
+  //   overflow-y: scroll
+  //   -webkit-overflow-scrolling: touch
+  //   @include transition(right 0.33s ease-in-out)
 
-    &.mobile-menu-active
-      right: 15em  
-      box-shadow: 0 0 3em rgba(0,0,0,0.5)
+  //   &.mobile-menu-active
+  //     right: 15em  
+  //     box-shadow: 0 0 3em rgba(0,0,0,0.5)
 
-      .mobile-menu-trigger
-        color: $green !important
+  //     .mobile-menu-trigger
+  //       color: $green !important
 
 /*-----------  Global Content  -----------*/
 
