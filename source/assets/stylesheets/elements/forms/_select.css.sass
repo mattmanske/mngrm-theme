@@ -1,14 +1,18 @@
 /*-----------  Select Dropdowns  -----------*/
 
 .select-wrapper
+  margin: 0 auto
   position: relative
-  margin: 0.75em auto
 
   select
     margin-top: 0
     margin-bottom: 0
     cursor: pointer
     background-color: $white
+    @include appearance(none)
+
+    &:focus
+      outline: none
 
   label
     position: relative
@@ -16,11 +20,13 @@
   &:before
     top: 0
     right: 1rem
-    color: $grayDark
+    content: '\e804'
     font-size: 1.15em
+    color: $grayDark
     position: absolute
     line-height: 2.25rem
     pointer-events: none
+    font-family: 'mngrm'
     @include transition()
 
   &:hover
