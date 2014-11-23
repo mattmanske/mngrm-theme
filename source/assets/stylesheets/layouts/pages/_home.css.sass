@@ -96,11 +96,23 @@ body.index
 
   /*-----------  Content: Sizes  -----------*/
 
-  .sizes-wrapper
-    text-align: center
+  .size-wrapper
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: image-url('sizes-bg.jpg')
 
-    img
-      vertical-align: middle
+    .size-block
+      width: 23%
+      margin-top: 26em
+      text-align: center
+      @include inline-block()
+
+      &.first
+        margin-left: 4%
+
+      &.last 
+        margin-right: 4%
 
   /*-----------  Instagram Images  -----------*/
 

@@ -1,16 +1,22 @@
 ---
-title: Fine Printed Jewlery
+title: Fine 3D Printed Jewlery
 ---
+
+/*-----------  Video  -----------*/
+
+section.video-wrapper
+  video.video-block autoplay="true" loop="true" poster="#{image_path('video-bg.jpg')}"
+    source src="#{image_path('video.mp4')}" type="video/mp4"
 
 /*-----------  Slideshow  -----------*/
 
-section.slideshow-wrapper
+/ section.slideshow-wrapper
   
-  .slideshow-block style="background-image:url(#{image_path('slideshow/slideshow_1.jpg')})"
-  .slideshow-block style="background-image:url(#{image_path('slideshow/slideshow_2.jpg')})"
+/   .slideshow-block style="background-image:url(#{image_path('slideshow/slideshow_1.jpg')})"
+/   .slideshow-block style="background-image:url(#{image_path('slideshow/slideshow_2.jpg')})"
 
-  i.icon-arrow-left
-  i.icon-arrow-right    
+/   i.icon-arrow-left
+/   i.icon-arrow-right    
 
 /*-----------  Customization  -----------*/
 
@@ -70,6 +76,29 @@ section.rendering-wrapper
     | Rendering...
 
   iframe(src="https://lagoa.com/embed_links/4876?validationHash=53AO6YHYnkDqOSE14fKsYv4nOD_2PQ&width=580&height=450&auto_load_scene=true" id="lagoaframe" width="580" height="450" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+
+/*-----------  Content: Sizes  -----------*/
+
+section.size-wrapper
+  .bounds-wrapper
+    h3 Sizes
+
+    .size-block.first
+      | 1/2 Inch 
+      br
+      | Necklace
+    .size-block
+      | 3/4 Inch 
+      br
+      | Necklace
+    .size-block
+      | 1/2 Inch 
+      br
+      | Keychain
+    .size-block.last
+      | 3/4 Inch 
+      br
+      | Keychain          
 
 /*-----------  Content: Materials  -----------*/
 
@@ -153,16 +182,6 @@ section.content-wrapper
           strong Platinum
           span Solid Platinum hand-polished to a beautiful smooth sheen
 
-/*-----------  Content: Sizes  -----------*/
-
-section.content-wrapper
-  .bounds-wrapper
-    h3 Sizes
-
-    .sizes-wrapper
-      = image_tag 'size-half.png'
-      = image_tag 'size-third.png'
-
 /*-----------  Content: About  -----------*/
 
 section.content-wrapper
@@ -174,7 +193,7 @@ section.content-wrapper
       ul.facts-block
         li
           i.icon-star
-          p MNGRMS are impossible to make by hand. Each is made from about 350 solid metal cylinders.
+          p MNGRMS are impossible to make by hand. We use the latest in 3D printing technology to make our complex precious metal pendants.
         li
           i.icon-ruler
           p Each individual 1/2 inch MNGRM is made up of over 2 feet of solid metal piping.
@@ -183,13 +202,10 @@ section.content-wrapper
           p Each custom MNGRM will arrive 3 - 4 weeks from the date of order
         li
           i.icon-chain
-          p Our chains are made from the finest matching material and not plated so they will last with age.                   
-        li
-          i.icon-necklace
-          p The 1/2 inch pendant necklace chains include an adjustable clasp, allowing the chain to be lengthened from 16 - 20 inches.                 
+          p Our chains are made from the finest matching material and will last with age. Necklaces include a long 30 inch chain. Keychains include a 1.5 inch keyring chain.                  
         li
           i.icon-typeface
-          p We built the MNGRM structures off of the contemporary sans- serif Arial typeface.                  
+          p MNGRM is designed from our favorite contemporary sans- seriff Arial typeface.                 
 
       .process-block
 

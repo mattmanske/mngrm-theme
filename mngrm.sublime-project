@@ -22,8 +22,12 @@
 			"path": "source"
 		},
 		{
-			"name": "Data",
-			"path": "data"
+			"name": "Build",
+			"path": "build"
+		},
+		{
+			"name": "Theme",
+			"path": "theme"
 		},
 		{
 			"file_exclude_patterns":

@@ -5,14 +5,15 @@
   right: 0
   z-index: 100
   position: absolute
+  background-color: $black
+  @include full-span(0.75em $gutter)
   @include header-font()
-  @include full-span(1.25em $gutter)
 
   /*-----------  Header Logo  -----------*/
 
   .header-logo
     float: left
-    width: 15em
+    width: 14em
 
     img
       width: 100%
@@ -22,7 +23,7 @@
     h1
       margin: 0
       color: $white
-      font-size: 1.5em
+      font-size: 1.33em
       text-align: center
       text-transform: uppercase
       @include antialiased()
@@ -65,8 +66,9 @@
 
     > a
       color: $white
-      font-size: 1.1em
       margin-left: 1em
+      font-size: 1.25em
+      line-height: 3.67rem
       text-transform: uppercase
       @include inline-block()
       @include antialiased()

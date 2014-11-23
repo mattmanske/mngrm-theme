@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-right: "
+			],
+			[
+				"min",
+				"min-width: "
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
 				"cur",
 				"currName"
 			],
@@ -58,10 +70,6 @@
 			[
 				"tran",
 				"transition	Bourbon"
-			],
-			[
-				"font",
-				"font-size: "
 			],
 			[
 				"fnt",
@@ -138,10 +146,6 @@
 			[
 				"rm",
 				"upper-roman"
-			],
-			[
-				"padd",
-				"padding-bottom"
 			],
 			[
 				"inline",
@@ -248,42 +252,18 @@
 	"buffers":
 	[
 		{
-			"file": "source/assets/javascripts/_price-calculator.coffee",
+			"file": "source/assets/stylesheets/layouts/_document.css.sass",
 			"settings":
 			{
-				"buffer_size": 2510,
+				"buffer_size": 1634,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/assets/javascripts/_configurator.coffee",
+			"file": "mngrm.sublime-project",
 			"settings":
 			{
-				"buffer_size": 4994,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/assets/stylesheets/components/_customizer.css.sass",
-			"settings":
-			{
-				"buffer_size": 1465,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/assets/stylesheets/settings/_variables.css.sass",
-			"settings":
-			{
-				"buffer_size": 632,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/index.slim",
-			"settings":
-			{
-				"buffer_size": 6587,
+				"buffer_size": 519,
 				"line_ending": "Unix"
 			}
 		}
@@ -388,30 +368,33 @@
 	},
 	"file_history":
 	[
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_structure.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/_document.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/global/_header.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/global/_mobile_menu.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/_text.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_customizer.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/index.slim",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_select.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/pages/_home.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/layouts/layout.slim",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_fonts.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_newsletter.css.sass",
+		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_variables.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_configurator.coffee",
-		"/Users/Manske/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_price-calculator.coffee",
+		"/Users/Manske/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_rendering.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_slideshow.coffee",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_slideshow.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/pages/_home.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_buttons.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_inputs.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_newsletter.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_instagram.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/_document.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_fonts.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_customizer.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/images/Untitled-1.png",
-		"/Users/Manske/Sites/MNGRM/source/layouts/layout.slim",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/_configurator.js",
 		"/Users/Manske/Downloads/MDConfigurator/MaxDavisConfigurator.html",
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/app.coffee",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/global/_header.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_variables.css.sass",
 		"/Users/Manske/Sites/MNGRM/config.rb",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/_text.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/partials/_footer.slim",
 		"/Users/Manske/Sites/MNGRM/source/partials/_header.slim",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/global/_footer.css.sass",
@@ -420,11 +403,8 @@
 		"/Users/Manske/Sites/MNGRM/source/assets/javascripts/slideshow.coffee",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_selectors.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/components/_dropdowns.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_select.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/elements/forms/_forms.css.sass",
 		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_mixins.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/layouts/global/_mobile_menu.css.sass",
-		"/Users/Manske/Sites/MNGRM/source/assets/stylesheets/settings/_structure.css.sass",
 		"/Users/Manske/Sites/MNGRM/Gemfile",
 		"/Users/Manske/Sites/MNGRM/data/project.yml",
 		"/Users/Manske/Sites/MNGRM/README.md",
@@ -559,6 +539,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"med",
+			"me",
+			"media",
+			"selec",
 			"js-",
 			" app.js:[0-9][0-9][0-9][0-9]",
 			"material",
@@ -682,11 +666,7 @@
 			"session_destroy",
 			"wsl_render_notices_pages",
 			"error",
-			"Unspecified error",
-			"\nUnspecified error",
-			"json_api_rewrites",
-			"wp_rules",
-			"You are already logged in as"
+			"Unspecified error"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -765,79 +745,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/assets/javascripts/_price-calculator.coffee",
+					"file": "source/assets/stylesheets/layouts/_document.css.sass",
 					"settings":
 					{
-						"buffer_size": 2510,
+						"buffer_size": 1634,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								128,
-								128
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/assets/javascripts/_configurator.coffee",
-					"settings":
-					{
-						"buffer_size": 4994,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								621,
-								621
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 350.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/assets/stylesheets/components/_customizer.css.sass",
-					"settings":
-					{
-						"buffer_size": 1465,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1415,
-								1415
+								642,
+								642
 							]
 						],
 						"settings":
@@ -847,30 +771,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 341.0,
+						"translation.y": 425.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "source/assets/stylesheets/settings/_variables.css.sass",
+					"buffer": 1,
+					"file": "mngrm.sublime-project",
 					"settings":
 					{
-						"buffer_size": 632,
+						"buffer_size": 519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								357,
+								357
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -881,37 +806,8 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 4,
-					"file": "source/index.slim",
-					"settings":
-					{
-						"buffer_size": 6587,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2121,
-								2121
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ruby-slim.tmbundle/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 800.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
