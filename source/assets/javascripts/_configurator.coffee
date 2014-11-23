@@ -11,7 +11,7 @@ $(document).ready ->
   cam      = null
   scn      = null
   currName = 'AL'
-  currMat  = '14k Gold'
+  currMat  = 'Stainless Steel'
 
   #-----------  Lagoa Initilizers  -----------#
 
