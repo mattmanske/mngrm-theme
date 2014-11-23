@@ -15,3 +15,6 @@
 
 # Ignore Bower
 /bower
+
+# Ignore Build
+/build
