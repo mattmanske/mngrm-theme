@@ -66,12 +66,21 @@
 
     > a
       color: $white
-      margin-left: 1em
       font-size: 1.25em
+      margin-left: 1.75em
       line-height: 3.67rem
       text-transform: uppercase
       @include inline-block()
       @include antialiased()
+
+      &.cart-block
+        color: $black
+        padding: 0 1rem
+        border-radius: 5px
+        line-height: 2.67rem
+        margin-top: 0.45rem
+        margin-bottom: 0.5rem
+        background-color: $white
 
       &.social-link i:before
         font-size: 1.67em
