@@ -41,15 +41,8 @@ $(document).ready ->
     loadInitials()
 
   material.bind 'change', ->
-    i = 0
-    meshes = scn.getMeshes()
-
-    while i < meshes.length
-      materialName = $(@).find('option:selected').text()
-      objName      = meshes[i].properties.getParameter("name").value
-      lapi.applyMaterialToMeshByName materialName, objName
-      ++i
-    return
+    currMat = $(@).find('option:selected').text()
+    applyMaterialToAllMeshes(currMat)
 
   #-----------  Render Functions  -----------#
 
@@ -119,6 +112,16 @@ $(document).ready ->
             renderVisible: true
             shadowCast: true
 
+    return
+
+  applyMaterialToAllMeshes = (in_material) ->
+    i = 0
+    meshes = scn.getMeshes()
+
+    while i < meshes.length
+      objName = meshes[i].properties.getParameter("name").value
+      lapi.applyMaterialToMeshByName in_material, objName
+      ++i
     return
 
   setMaterial = (in_material) ->
@@ -234,6 +237,7 @@ $(document).ready ->
           renderVisible: true
           shadowCast: true
 
+      applyMaterialToAllMeshes(currMat)          
       return
 
     return
